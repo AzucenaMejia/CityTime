@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CityTime</title>
     <link rel="stylesheet" href="./css/estilo.css">
+    
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         </div>
         <div>
 
-            <button class="Ubicacion">
+            <button class="ubicacion"></button>
                 <img src="/imagenes/icono-de-ubicacion.png" alt="Planeta" class="icono">
             </button>
         </div>
@@ -24,26 +25,28 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li> 
-                <li><a href="clima.html">Clima</a></li>
                 <li><a href="mapa.html">Mapa</a></li>
             </ul>
         
     </header>
     
     <main>
-        <h2>Ingresa el nombre de la ciudad para conocer el clima y ver su mapa de ubicación.</h2>
-        <form action="clima.html" method="post">
+        <h2 class="texto">Ingresa el nombre de la ciudad para conocer el clima y ver su mapa de ubicación.</h2>
+        <form id="searchForm">
             <input type="text" id="ciudad" name="ciudad" required>
-            <button class="boton-Consulta" value="Consultar">Consultar</button>
+            <button type="submit" class="boton-consulta" value="Consultar">Consultar</button>
+            <button type="button" class="boton-limpiar" onclick="limpiarFormulario()">Limpiar</button>
+
+        </form>
     </main>
 
     <footer class="pie-de-pagina">
         <nav>
             <ul>
-                <li><a href="index.html">Privacidad</li> 
-                <li><a href="clima.html">Configuración de cookies</a></li>
-                <li><a href="mapa.html">Derechos de los datos</a></li>
-                <li><a href="mapa.html">Políticas de Privacidad</li>
+                <li><a href="">Privacidad</a></li> 
+                <li><a href="">Configuración de cookies</a></li>
+                <li><a href="">Derechos de los datos</a></li>
+                <li><a href="">Políticas de Privacidad</a></li>
 
             </ul>
         </nav>

@@ -24,24 +24,37 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li> 
-                <li><a href="clima.html">Clima</a></li>
                 <li><a href="mapa.html">Mapa</a></li>
             </ul>
         
     </header>
     
     <main>
-        <h2>Resultado</h2>
-            <button class="boton-borrar" value="Volver a Consultar">Volver a Consultar</button>
+        <h2 Class="texto">Resultado del Clima</h2>
+        <table id="weatherTable">
+            <thead>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Temperatura</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+
+                <tbody>
+                    <!-- Resultados aquí -->
+                </tbody>
+        </table>
+        <div id="mapa"></div>
+        <button class="boton-borrar" onclick="window.location.href='index.html'">Volver a Consultar</button>
     </main>
 
     <footer class="pie-de-pagina">
         <nav>
             <ul>
-                <li><a href="index.html">Privacidad</li> 
-                <li><a href="clima.html">Configuración de cookies</a></li>
-                <li><a href="mapa.html">Derechos de los datos</a></li>
-                <li><a href="mapa.html">Políticas de Privacidad</li>
+                <li><a href="">Privacidad</li> 
+                <li><a href="">Configuración de cookies</a></li>
+                <li><a href="">Derechos de los datos</a></li>
+                <li><a href="">Políticas de Privacidad</li>
 
             </ul>
         </nav>
@@ -50,6 +63,7 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap"></script>
 
 </body>
 </html>
